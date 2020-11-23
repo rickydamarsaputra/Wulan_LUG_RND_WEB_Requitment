@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>LUG RND WEB</title>
+	<!-- tailwindcss -->
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	<!-- fancybox -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+</head>
+
+<body class="relative" x-data="{isDark: false}">
+	<!-- hero section -->
+	<section class="bg-gradient-to-br"
+		:class="{ 'from-gray-800 to-gray-600': isDark == true, 'from-yellow-600 to-yellow-300': isDark == false}">
+		<div class="w-4/5 h-screen mx-auto flex items-center">
+			<div class="grid gap-8 lg:grid-cols-2">
+				<div>
+					<div class="capitalize text-3xl text-white lg:whitespace-nowrap">
+						hello, i am ricky damar saputra from <span class="uppercase font-bold text-4xl"
+							:class="{'text-gray-500': isDark == true, 'text-yellow-900': isDark == false}">lug</span>
+					</div>
+					<div class="text-gray-200 text-base my-5">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consequuntur adipisci animi quam! Saepe deleniti
+						similique iusto tempora cumque, amet accusamus earum ducimus at neque velit ipsam. Repellat, perferendis
+						earum.
+					</div>
+					<div>
+						<button class="lug__primary__button lg:hover:translate-x-4">
+							read more
+						</button>
+					</div>
+				</div>
+				<div class="order-first mt-16 lg:order-none lg:mt-0">
+					<img x-show="isDark == false" src="../assets/img/lug__think__normal.svg" alt="lug think people">
+					<img x-show="isDark == true" src="../assets/img/lug__think__dark.svg" alt="lug think people">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- about -->
+	<section class="bg-gradient-to-br"
+		:class="{ 'from-gray-800 to-gray-600': isDark == true, 'from-yellow-600 to-yellow-300': isDark == false}">
+		<div class="w-4/5 mx-auto flex justify-end pt-5">
+			<div class="bg-white uppercase font-medium px-8 rounded-full"
+				:class="{'text-gray-700': isDark == true, 'text-yellow-600': isDark == false}">
+				about me
+			</div>
+		</div>
+		<div class="w-4/5 h-screen mx-auto flex items-center">
+			<div class="grid gap-8 lg:grid-cols-2">
+				<div>
+					<img x-show="isDark == false" src="../assets/img/lug__profile__normal.svg" alt="lug profile">
+					<img x-show="isDark == true" src="../assets/img/lug__profile__dark.svg" alt="lug profile">
+				</div>
+				<div>
+					<div class="text-white uppercase text-3xl">about me</div>
+					<div class="my-4 text-gray-200">
+						<div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro dolore corrupti alias asperiores,
+							tempora
+							sit. Quae natus similique quaerat! Accusamus.</div>
+						<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, laboriosam?</div>
+					</div>
+					<div>
+						<button class="lug__primary__button lg:hover:translate-x-4">portofolio</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- portofolio -->
+	<section class="bg-gradient-to-br"
+		:class="{ 'from-gray-800 to-gray-600': isDark == true, 'from-yellow-600 to-yellow-300': isDark == false}">
+		<div class="w-4/5 mx-auto flex justify-end pt-5">
+			<div class="bg-white uppercase font-medium px-8 rounded-full"
+				:class="{'text-gray-700': isDark == true, 'text-yellow-600': isDark == false}">
+				portofolio
+			</div>
+		</div>
+		<div class="w-4/5 mx-auto py-20 lg:py-40">
+			<div class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 items-center justify-between">
+				<a href="../assets/img/project/lug__bpipi.png" data-fancybox data-caption="http://dashboard.bpipi.id">
+					<div class="lug__project__item"
+						:class="{'border-gray-900 text-gray-800': isDark == true, 'border-yellow-700 text-yellow-600': isDark == false}">
+						bpipi
+					</div>
+				</a>
+				<a href="../assets/img/project/lug__react__corona.png" data-fancybox
+					data-caption="https://react-app-a6cd3.web.app">
+					<div class="lug__project__item"
+						:class="{'border-gray-900 text-gray-800': isDark == true, 'border-yellow-700 text-yellow-600': isDark == false}">
+						react corona
+					</div>
+				</a>
+				<a href="../assets/img/project/lug__laravel__spp.png" data-fancybox
+					data-caption="http://laravel-heroku-spp.herokuapp.com">
+					<div class="lug__project__item"
+						:class="{'border-gray-900 text-gray-800': isDark == true, 'border-yellow-700 text-yellow-600': isDark == false}">
+						laravel spp
+					</div>
+				</a>
+			</div>
+			<div class="mt-8 flex justify-center lg:justify-start">
+				<button class="lug__primary__button lug__button__more__project lg:hover:translate-x-4">
+					more project
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<!-- footer -->
+	<footer class="bg-gradient-to-br"
+		:class="{ 'from-gray-800 to-gray-600': isDark == true, 'from-yellow-600 to-yellow-300': isDark == false}">
+		<div class="w-4/5 h-12 mx-auto flex justify-between items-center">
+			<div class="text-sm text-white capitalize font-medium">
+				&copy; <span class="lug__year__now"></span> ricky damar saputra from <span class="font-semibold"
+					:class="{'text-gray-200': isDark == true, 'text-yellow-800': isDark == false}">lug</span>
+			</div>
+			<div class="flex space-x-5 text-white">
+				<a href="https://github.com/rickydamarsaputra" class="text-xl"><i class="fab fa-github"></i></a>
+				<a href="mailto:retrocode.rc@gmail.com" class="text-xl"><i class="fas fa-envelope"></i></a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- menu toggle -->
+	<div class="fixed top-8 right-8">
+		<button @click="isDark = true" class="lug__toggle__button bg-gray-800 text-white">
+			<i class="far fa-moon"></i>
+		</button>
+		<button @click="isDark = false" class="lug__toggle__button bg-yellow-100 text-black">
+			<i class="far fa-sun"></i>
+		</button>
+	</div>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<!-- fancybox -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+	<!-- alpine -->
+	<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js" defer></script>
+	<!-- custom js -->
+	<script src="../assets/js/main.js"></script>
+</body>
+
+</html>
